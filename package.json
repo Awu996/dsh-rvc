@@ -1,0 +1,63 @@
+{
+  "name": "dsh-rvc",
+  "version": "0.2.0",
+  "description": "RVC变声：DeepSeek Harness 插件。把常见格式的音频或视频转成标准 WAV，交给容语（RVC）变声；内含 QQ语音桥，通过本机 NapCat 取回主人发的 QQ 语音，并把音频作为语音条发回聊天。",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "rvc",
+    "voice",
+    "silk",
+    "wav",
+    "qq",
+    "napcat",
+    "onebot"
+  ],
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "dependencies": {
+    "silk-wasm": "^3.7.1",
+    "ws": "^8.18.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  }
+}

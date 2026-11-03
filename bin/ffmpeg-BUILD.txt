@@ -1,0 +1,12 @@
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers
+built with gcc 16.2.0 (Rev6, Built by MSYS2 project)
+configuration: --prefix=/opt/dsh-rvc --arch=x86_64 --disable-everything --disable-autodetect --disable-doc --disable-debug --disable-network --disable-programs --enable-ffmpeg --disable-avdevice --disable-swscale --disable-x86asm --enable-small --enable-static --disable-shared --enable-protocol='file,pipe' --enable-demuxer='wav,w64,mp3,aac,loas,ac3,eac3,dts,truehd,mlp,mov,matroska,ogg,flac,amr,amrnb,amrwb,asf,xwma,flv,live_flv,avi,caf,aiff,au,voc,mpegts,mpegps,wv,ape,tta' --enable-decoder='pcm_s8,pcm_u8,pcm_s16le,pcm_s16be,pcm_s24le,pcm_s24be,pcm_s32le,pcm_s32be,pcm_f32le,pcm_f32be,pcm_f64le,pcm_alaw,pcm_mulaw,adpcm_ms,adpcm_ima_wav,adpcm_ima_qt,gsm,gsm_ms,mp1,mp1float,mp2,mp2float,mp3,mp3float,aac,aac_fixed,aac_latm,ac3,ac3_fixed,eac3,dca,truehd,mlp,opus,vorbis,flac,alac,amrnb,amrwb,wmav1,wmav2,wmapro,wmalossless,ape,tta,wavpack' --enable-parser='aac,aac_latm,ac3,mpegaudio,opus,vorbis,flac,dca,mlp,amr,gsm' --enable-encoder=pcm_s16le --enable-muxer='wav,null' --enable-filter='abuffer,abuffersink,aresample,aformat,anull,atrim' --extra-ldflags=-static
+libavutil      61.  1.102 / 61.  1.102
+libavcodec     63.  1.102 / 63.  1.102
+libavformat    63.  1.102 / 63.  1.102
+libavfilter    12.  1.102 / 12.  1.102
+libswresample   7.  1.102 /  7.  1.102
+
+Exiting with exit code 0
+source: https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz
+built with MSYS2 UCRT64 gcc using scripts/build-ffmpeg.sh from this package
