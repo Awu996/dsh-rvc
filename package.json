@@ -1,7 +1,7 @@
 {
   "name": "dsh-rvc",
-  "version": "0.3.0",
-  "description": "RVC变声：DeepSeek Harness 插件。把常见格式的音频或视频转成标准 WAV，交给容语（RVC）变声，返回 WAV 文件路径，不收发任何消息。",
+  "version": "0.4.0",
+  "description": "RVC变声：DeepSeek Harness 插件。把常见格式的音频或视频转成标准 WAV，交给容语（RVC）变声；或者交给容语轻量版把歌曲分成人声和伴奏。返回 WAV 文件路径，不收发任何消息。",
   "license": "MIT",
   "type": "module",
   "main": "./lib/host.js",
@@ -28,7 +28,8 @@
     "voice",
     "silk",
     "wav",
-    "qq"
+    "qq",
+    "separation"
   ],
   "os": [
     "win32"
