@@ -1,7 +1,7 @@
 {
   "name": "dsh-rvc",
-  "version": "0.2.0",
-  "description": "RVC变声：DeepSeek Harness 插件。把常见格式的音频或视频转成标准 WAV，交给容语（RVC）变声；内含 QQ语音桥，通过本机 NapCat 取回主人发的 QQ 语音，并把音频作为语音条发回聊天。",
+  "version": "0.3.0",
+  "description": "RVC变声：DeepSeek Harness 插件。把常见格式的音频或视频转成标准 WAV，交给容语（RVC）变声，返回 WAV 文件路径，不收发任何消息。",
   "license": "MIT",
   "type": "module",
   "main": "./lib/host.js",
@@ -28,9 +28,7 @@
     "voice",
     "silk",
     "wav",
-    "qq",
-    "napcat",
-    "onebot"
+    "qq"
   ],
   "os": [
     "win32"
@@ -43,8 +41,7 @@
     "dsh": ">=0.2.1-rc.3"
   },
   "dependencies": {
-    "silk-wasm": "^3.7.1",
-    "ws": "^8.18.0"
+    "silk-wasm": "^3.7.1"
   },
   "dsh": {
     "bundle": {
