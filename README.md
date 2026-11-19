@@ -45,11 +45,14 @@ DeepSeek Harness（DSH）插件，一个中间工具，做两件事：
 
 插件没有发布到 npm 和插件市场，用本机文件夹安装：
 
-1. 把插件文件夹放在一个固定位置，比如 `D:\DSH-plugins\dsh-rvc`。DSH 直接使用这个文件夹，装好后不要移动或删除它。文件夹里要带着 `node_modules`（插件依赖 silk-wasm）；没有的话，在插件文件夹里执行一次 `npm install --omit=dev --registry=https://registry.npmmirror.com`。
-2. 在 DSH 的插件页点「添加插件」，在「包名或地址」里填插件文件夹的完整路径，安装。
-3. 完全退出 DSH（托盘图标右键退出），再重新打开。设置里会多出「RVC变声」页。
+1. 打开 [Releases](https://github.com/Awu996/dsh-rvc/releases/latest)，下载最新版本附带的 zip（比如 `dsh-rvc-0.4.0.zip`）。不要下载 Source code，那个里面没有插件需要的依赖。
+2. 把 zip 解压到一个固定位置，比如 `D:\DSH-plugins`，会得到 `D:\DSH-plugins\dsh-rvc` 文件夹，里面直接就是 `package.json`、`lib`、`bin`、`node_modules`。DSH 直接使用这个文件夹，装好后不要移动或删除它。
+3. 在 DSH 的插件页点「添加插件」，在「包名或地址」里填 `dsh-rvc` 文件夹的完整路径（直接包含 `package.json` 的那一层），安装。
+4. 完全退出 DSH（托盘图标右键退出），再重新打开。设置里会多出「RVC变声」页。
 
-更新插件时，替换文件夹里的文件，再完全退出并重新打开 DSH。
+更新插件时，下载新版本的 zip，把里面 `dsh-rvc` 文件夹的文件覆盖到原来的插件文件夹，再完全退出并重新打开 DSH。
+
+也可以直接下载仓库源码当插件文件夹用。这样下载的文件夹里没有 `node_modules`，要先在插件文件夹里执行一次 `npm install --omit=dev --registry=https://registry.npmmirror.com`（插件依赖 silk-wasm）。
 
 ## 设置
 
